@@ -31,6 +31,10 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\.venv\Scripts\Activate.ps1
 ```
 
+## Configuración
+
+En el fichero config.yaml se han de configurar tanto la "organization_url" como el "project", además de la versión de la API, tamaños de página, reintentos en caso de error, componentes/adjuntos que se exportarán o no, directorio de salida, ...
+
 ## Comprobación de acceso
 
 ```powershell
