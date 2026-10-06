@@ -1,0 +1,36 @@
+organization_url: ""
+project: ""
+
+# Versión estable de la API REST.
+api_version: "7.1"
+
+# Tamaños de página y lote.
+work_item_batch_size: 200
+page_size: 200
+request_timeout_seconds: 60
+
+# Reintentos para 429 y errores temporales 5xx.
+max_retries: 6
+retry_base_seconds: 2
+
+# Componentes que se exportarán.
+export:
+  project: true
+  teams: true
+  classification_nodes: true
+  team_iterations: true
+  work_item_types: true
+  fields: true
+  work_items: true
+  revisions: true
+  updates: true
+  comments: true
+  queries: true
+  dashboards: true
+  wikis: true
+
+# Los adjuntos se registran como relaciones/metadatos, pero no se descargan.
+download_attachments: false
+
+# Directorio de salida, relativo a la carpeta del programa.
+output_directory: "output"
