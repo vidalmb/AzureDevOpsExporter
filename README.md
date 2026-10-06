@@ -31,9 +31,21 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\.venv\Scripts\Activate.ps1
 ```
 
-## Configuración
+## Configuración (config.yaml)
 
 En el fichero config.yaml se han de configurar tanto la "organization_url" como el "project", además de la versión de la API, tamaños de página, reintentos en caso de error, componentes/adjuntos que se exportarán o no, directorio de salida, ...
+
+| **Parámetro** | **Significado** |
+|---|---|
+| `organization_url` | URL base de la organización de Azure DevOps. |
+| `project` | Nombre exacto del proyecto. |
+| `api_version` | Versión estable por defecto para la API REST. |
+| `work_item_batch_size` | Número de Work Items por llamada batch; el máximo utilizado es 200. |
+| `page_size` | Tamaño de página para revisiones, actualizaciones y comentarios. |
+| `request_timeout_seconds` | Tiempo máximo de espera por petición. |
+| `max_retries` | Número de reintentos ante errores temporales. |
+| `export` | Interruptores para habilitar o deshabilitar componentes. |
+| `output_directory` | Carpeta raíz de salida. |
 
 ## Comprobación de acceso
 
